@@ -26,6 +26,7 @@
     "@radix-ui/react-tabs": "^1.1.2",
     "@radix-ui/react-toast": "^1.2.4",
     "@radix-ui/react-tooltip": "^1.1.6",
+    "build": "^0.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zustand": "^5.0.3"
@@ -58,10 +59,10 @@
     "node": ">=18"
   },
   "packageManager": "pnpm@9.15.4",
-"license": "MIT",
-"pnpm": {
+  "license": "MIT",
+  "pnpm": {
     "overrides": {
-        "rollup@<2.80.0": ">=4.0.0"
+      "rollup@<2.80.0": ">=4.0.0"
     }
-}
+  }
 }

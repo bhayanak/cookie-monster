@@ -36,7 +36,7 @@ if (manifest.background?.service_worker) {
 // Write modified manifest
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
 
-const xpiName = `cookie-monster-firefox-v${process.env.npm_package_version || '1.0.0'}.xpi`;
+const xpiName = `cookie-sentinel-firefox-v${process.env.npm_package_version || '1.0.0'}.xpi`;
 execSync(`cd "${distDir}" && zip -r "${resolve(outDir, xpiName)}" .`, { stdio: 'inherit' });
 
 console.log(`✅ Firefox package created: dist-firefox/${xpiName}`);
