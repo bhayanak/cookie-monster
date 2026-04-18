@@ -103,7 +103,7 @@ function App() {
       <div className="flex items-center gap-2">
         <span className="text-2xl">🍪</span>
         <div>
-          <h1 className="text-sm font-bold text-monster-400">Cookie Monster</h1>
+          <h1 className="text-sm font-bold text-monster-400">Cookie Sentinel</h1>
           <p className="text-[10px] text-slate-500">{domain}</p>
         </div>
         {score && (
@@ -170,7 +170,7 @@ function App() {
       </div>
 
       <p className="text-[9px] text-slate-600 text-center">
-        Open DevTools → Cookie Monster tab for full inspector
+        Open DevTools → Cookie Sentinel tab for full inspector
       </p>
     </div>
   );

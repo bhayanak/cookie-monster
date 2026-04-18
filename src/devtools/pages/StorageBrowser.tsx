@@ -93,7 +93,7 @@ function StorageBrowser() {
         <span>
           {filteredEntries.length} of {entries.length} entries
         </span>
-        <span>Cookie Monster v1.0.0</span>
+        <span>Cookie Sentinel v1.0.0</span>
       </div>
     </div>
   );

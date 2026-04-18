@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="public/icons/logo.svg" width="128" alt="Cookie Monster logo" />
+  <img src="public/icons/logo.svg" width="128" alt="Cookie Sentinel logo" />
 </p>
 
-<h1 align="center">🍪 Cookie Monster</h1>
+<h1 align="center">🍪 Cookie Sentinel</h1>
 
 <p align="center">
   <strong>See everything your browser stores. Search, edit, analyze, export.</strong><br/>
@@ -70,7 +70,7 @@ Note: Use github release for installing extensions/addons for now.
 
 ## Comparison
 
-| Feature | Cookie Monster | EditThisCookie | DevTools Built-in |
+| Feature | Cookie Sentinel | EditThisCookie | DevTools Built-in |
 |---------|:-:|:-:|:-:|
 | Manifest V3 | ✅ | ❌ (MV2) | N/A |
 | Unified storage view | ✅ | ❌ | ❌ (separate tabs) |
@@ -89,7 +89,7 @@ Note: Use github release for installing extensions/addons for now.
 ### DevTools Panel
 
 1. Open DevTools (`F12` or `Cmd+Opt+I`)
-2. Navigate to the **Cookie Monster** tab
+2. Navigate to the **Cookie Sentinel** tab
 3. Browse all storage entries in the unified view
 4. Use the search bar to filter by key, value, or domain
 5. Click any entry to see full details (value, metadata, classification)
@@ -103,7 +103,7 @@ Click the extension icon in the toolbar for a quick summary:
 
 ### Privacy Score
 
-Cookie Monster rates each site from 0 to 100:
+Cookie Sentinel rates each site from 0 to 100:
 
 | Score | Rating | Meaning |
 |-------|--------|---------|

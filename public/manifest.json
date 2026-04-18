@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Cookie Monster",
+  "name": "Cookie Sentinel",
   "description": "See everything your browser stores. Search, edit, analyze, export. Unified cookie & storage inspector with privacy scoring.",
   "version": "1.0.0",
   "icons": {
@@ -22,7 +22,7 @@
       "48": "icons/icon-48.png",
       "128": "icons/icon-128.png"
     },
-    "default_title": "Cookie Monster — Storage Inspector"
+    "default_title": "Cookie Sentinel — Storage Inspector"
   },
   "background": {
     "service_worker": "src/background/index.ts",

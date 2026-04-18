@@ -17,8 +17,11 @@ const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 // Firefox-specific adjustments
 manifest.browser_specific_settings = {
   gecko: {
-    id: 'cookie-monster@extension',
+    id: 'cookie-sentinel@extension',
     strict_min_version: '109.0',
+    data_collection_permissions: {
+      required: ['none'],
+    },
   },
 };
 

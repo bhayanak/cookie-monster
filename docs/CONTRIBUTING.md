@@ -1,4 +1,4 @@
-# Contributing to Cookie Monster
+# Contributing to Cookie Sentinel
 
 Thank you for your interest in contributing! Here's how to get started.
 

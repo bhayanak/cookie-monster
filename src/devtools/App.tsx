@@ -59,7 +59,7 @@ function App() {
       <header className="flex items-center justify-between px-4 py-2 border-b border-slate-700 bg-slate-900">
         <div className="flex items-center gap-2">
           <span className="text-lg">🍪</span>
-          <h1 className="text-sm font-bold text-monster-400">Cookie Monster</h1>
+          <h1 className="text-sm font-bold text-monster-400">Cookie Sentinel</h1>
         </div>
         <div className="flex-1 max-w-md mx-4">
           <SearchBar />

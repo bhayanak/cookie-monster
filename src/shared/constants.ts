@@ -1,6 +1,6 @@
 import type { CookieClass, StorageType } from './types';
 
-export const EXTENSION_NAME = 'Cookie Monster';
+export const EXTENSION_NAME = 'Cookie Sentinel';
 
 export const STORAGE_TYPE_LABELS: Record<StorageType, string> = {
   cookie: 'Cookies',

@@ -1,5 +1,5 @@
 /**
- * E2E test scaffold for Cookie Monster extension.
+ * E2E test scaffold for Cookie Sentinel extension.
  * Uses Playwright to load the extension in Chromium and test the popup + devtools.
  *
  * To run: npx playwright test
@@ -30,7 +30,7 @@ test.afterEach(async () => {
   await context?.close();
 });
 
-test.describe('Cookie Monster Extension', () => {
+test.describe('Cookie Sentinel Extension', () => {
   test('popup opens and shows domain info', async () => {
     const page = await context.newPage();
     await page.goto('https://example.com');
@@ -42,7 +42,7 @@ test.describe('Cookie Monster Extension', () => {
     if (extensionId) {
       const popup = await context.newPage();
       await popup.goto(`chrome-extension://${extensionId}/src/popup/popup.html`);
-      await expect(popup.locator('text=Cookie Monster')).toBeVisible();
+      await expect(popup.locator('text=Cookie Sentinel')).toBeVisible();
     }
   });
 
@@ -56,7 +56,7 @@ test.describe('Cookie Monster Extension', () => {
     if (extensionId) {
       const panel = await context.newPage();
       await panel.goto(`chrome-extension://${extensionId}/src/devtools/panel.html`);
-      await expect(panel.locator('text=Cookie Monster')).toBeVisible();
+      await expect(panel.locator('text=Cookie Sentinel')).toBeVisible();
     }
   });
 });
