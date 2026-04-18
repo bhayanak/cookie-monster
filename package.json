@@ -16,6 +16,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "package:chrome": "node scripts/package-chrome.mjs",
+    "package:edge": "node scripts/package-edge.mjs",
     "package:firefox": "node scripts/package-firefox.mjs",
     "validate": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test:coverage && pnpm build"
   },
