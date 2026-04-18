@@ -1,4 +1,4 @@
-import { SENSITIVE_PATTERNS, MAX_DISPLAY_VALUE_LENGTH } from './constants';
+import { SENSITIVE_PATTERNS, MAX_DISPLAY_VALUE_LENGTH, EXTENSION_VERSION } from './constants';
 import type { StorageEntry, SnapshotDiff, StorageSnapshot } from './types';
 
 /**
@@ -118,7 +118,7 @@ export function exportToJSON(entries: StorageEntry[], domain: string): string {
   const data = {
     exportedAt: new Date().toISOString(),
     domain,
-    version: '1.0.0',
+    version: EXTENSION_VERSION,
     entries,
   };
   return JSON.stringify(data, null, 2);

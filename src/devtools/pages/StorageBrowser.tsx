@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useAppStore } from '@shared/store';
 import type { StorageEntry, StorageType } from '@shared/types';
-import { STORAGE_TYPE_LABELS } from '@shared/constants';
+import { STORAGE_TYPE_LABELS, EXTENSION_VERSION } from '@shared/constants';
 import StorageTree from '../components/StorageTree';
 import CookieDetail from './CookieDetail';
 
@@ -93,7 +93,7 @@ function StorageBrowser() {
         <span>
           {filteredEntries.length} of {entries.length} entries
         </span>
-        <span>Cookie Sentinel v1.0.0</span>
+        <span>Cookie Sentinel v{EXTENSION_VERSION}</span>
       </div>
     </div>
   );

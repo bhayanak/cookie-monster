@@ -1,6 +1,9 @@
 import type { CookieClass, StorageType } from './types';
 
+declare const __APP_VERSION__: string;
+
 export const EXTENSION_NAME = 'Cookie Sentinel';
+export const EXTENSION_VERSION = typeof __APP_VERSION__ !== 'undefined' ? __APP_VERSION__ : '0.0.0';
 
 export const STORAGE_TYPE_LABELS: Record<StorageType, string> = {
   cookie: 'Cookies',

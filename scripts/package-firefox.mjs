@@ -40,7 +40,8 @@ if (manifest.background?.service_worker) {
 // Write modified manifest to temp copy only
 writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
 
-const xpiName = `cookie-sentinel-firefox-v${process.env.npm_package_version || '1.0.0'}.xpi`;
+const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
+const xpiName = `cookie-sentinel-firefox-v${pkg.version}.xpi`;
 execSync(`cd "${tmpDir}" && zip -r "${resolve(outDir, xpiName)}" .`, { stdio: 'inherit' });
 
 // Clean up temp directory

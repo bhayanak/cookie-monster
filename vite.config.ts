@@ -3,12 +3,19 @@ import react from '@vitejs/plugin-react';
 import { crx } from '@crxjs/vite-plugin';
 import { resolve } from 'path';
 import manifest from './public/manifest.json';
+import pkg from './package.json';
+
+// Sync manifest version from package.json (single source of truth)
+manifest.version = pkg.version;
 
 export default defineConfig({
   plugins: [
     react(),
     crx({ manifest }),
   ],
+  define: {
+    __APP_VERSION__: JSON.stringify(pkg.version),
+  },
   resolve: {
     alias: {
       '@shared': resolve(__dirname, 'src/shared'),

@@ -1,5 +1,5 @@
 import { execSync } from 'child_process';
-import { mkdirSync, cpSync } from 'fs';
+import { mkdirSync, cpSync, readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -11,7 +11,8 @@ const outDir = resolve(root, 'dist-chrome');
 mkdirSync(outDir, { recursive: true });
 
 // Copy dist to a temp folder and zip it
-const zipName = `cookie-sentinel-chrome-v${process.env.npm_package_version || '1.0.0'}.zip`;
+const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
+const zipName = `cookie-sentinel-chrome-v${pkg.version}.zip`;
 execSync(`cd "${distDir}" && zip -r "${resolve(outDir, zipName)}" .`, { stdio: 'inherit' });
 
 console.log(`✅ Chrome package created: dist-chrome/${zipName}`);
